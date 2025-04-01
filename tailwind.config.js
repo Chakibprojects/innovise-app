@@ -6,19 +6,19 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Poppins', 'sans-serif'],
-      },
       colors: {
-        primary: '#2962FF',
-        secondary: '#8A2BE2',
-        dark: {
-          DEFAULT: '#121212',
-          lighter: '#1A1A1A',
-        },
+        'dark': '#0A0A0A',
+        'dark-lighter': '#121212',
+        'primary': '#FF6B6B',
+        'secondary': '#4ECDC4'
       },
+      fontFamily: {
+        'sans': ['Inter', 'sans-serif'],
+        'display': ['Clash Display', 'sans-serif']
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
